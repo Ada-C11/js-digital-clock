@@ -26,11 +26,26 @@ const fetchAsiaTime = function fetchAsiaTime() {
 
     let time = `${hour}:${minutes}:${seconds}`;
 
-    $('.asia-time').html(time);
+    $('.tokyo-time').html(time);
 }
+
+const fetchEuropeTime = function fetchEuropeTime() {
+    let europeTime = new Date().toLocaleString("en-US", {timeZone: "Europe/London"});
+    europeTime = new Date(europeTime);
+
+    let hour = europeTime.getHours();
+    let minutes = europeTime.getMinutes();
+    let seconds = europeTime.getSeconds();
+
+    let time = `${hour}:${minutes}:${seconds}`;
+
+    $('.london-time').html(time);
+}
+
 
 const intervalID = setInterval(function () {
     fetchLocalTime();
     fetchAsiaTime();
+    fetchEuropeTime();
     // functionB();
 }, 1000);
