@@ -13,4 +13,6 @@ body {
     text-align: center;
     color: white;
     font-size: 100px;
+
+    border: 1px solid black;
 }
