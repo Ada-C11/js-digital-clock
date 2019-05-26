@@ -42,10 +42,24 @@ const fetchEuropeTime = function fetchEuropeTime() {
     $('.london-time').html(time);
 }
 
+const fetchNewYorkTime = function fetchNewYorkTime() {
+    let newYorkTime = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
+    newYorkTime = new Date(newYorkTime);
+
+    let hour = newYorkTime.getHours();
+    let minutes = newYorkTime.getMinutes();
+    let seconds = newYorkTime.getSeconds();
+
+    let time = `${hour}:${minutes}:${seconds}`;
+
+    $('.new-york-time').html(time);
+}
+
 
 const intervalID = setInterval(function () {
     fetchLocalTime();
     fetchAsiaTime();
     fetchEuropeTime();
+    fetchNewYorkTime();
     // functionB();
 }, 1000);
