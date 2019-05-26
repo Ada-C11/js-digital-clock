@@ -2,7 +2,7 @@
 // let string = "hi";
 // let date = new Date().toLocaleTimeString();
 
-const fetchTime = function fetchTime() {
+const fetchLocalTime = function fetchTime() {
   let date = new Date;
   let hour = date.getHours();
   let minutes = date.getMinutes();
@@ -11,7 +11,22 @@ const fetchTime = function fetchTime() {
   let time = `${hour}:${minutes}:${seconds}`;
   let displayTime = time;
 
-  $("#clock").html(displayTime);
+  $(".clock").html(displayTime);
 }
 
-const intervalID = window.setInterval(fetchTime, 1000);
+// const fetchAsiaTime = function fetchAsiaTime() {
+//     let asiaTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Shanghai"});
+//     asiaTime = new Date(asiaTime);
+
+//     let hour = asiaTime.getHours();
+//     let minutes = date.getMinutes();
+//     let seconds = date.getSeconds();
+
+//     let time = `${hour}:${minutes}:${seconds}`;
+//     let displayAsiaTime = time;
+
+//     $(".asia-clock").append(displayAsiaTime);
+// }
+
+const intervalID = window.setInterval(fetchLocalTime, 1000);
+// const asiaIntervalID = window.setInterval(fetchAsiaTime, 1000);
