@@ -2,6 +2,8 @@
 // let string = "hi";
 // let date = new Date().toLocaleTimeString();
 
+// $('.asia-time').append("HEllo");
+
 const fetchLocalTime = function fetchTime() {
   let date = new Date;
   let hour = date.getHours();
@@ -11,22 +13,24 @@ const fetchLocalTime = function fetchTime() {
   let time = `${hour}:${minutes}:${seconds}`;
   let displayTime = time;
 
-  $(".clock").html(displayTime);
+  $(".local-time").html(displayTime);
 }
 
-// const fetchAsiaTime = function fetchAsiaTime() {
-//     let asiaTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Shanghai"});
-//     asiaTime = new Date(asiaTime);
+const fetchAsiaTime = function fetchAsiaTime() {
+    let asiaTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Tokyo"});
+    asiaTime = new Date(asiaTime);
 
-//     let hour = asiaTime.getHours();
-//     let minutes = date.getMinutes();
-//     let seconds = date.getSeconds();
+    let hour = asiaTime.getHours();
+    let minutes = asiaTime.getMinutes();
+    let seconds = asiaTime.getSeconds();
 
-//     let time = `${hour}:${minutes}:${seconds}`;
-//     let displayAsiaTime = time;
+    let time = `${hour}:${minutes}:${seconds}`;
 
-//     $(".asia-clock").append(displayAsiaTime);
-// }
+    $('.asia-time').html(time);
+}
 
-const intervalID = window.setInterval(fetchLocalTime, 1000);
-// const asiaIntervalID = window.setInterval(fetchAsiaTime, 1000);
+const intervalID = setInterval(function () {
+    fetchLocalTime();
+    fetchAsiaTime();
+    // functionB();
+}, 1000);
