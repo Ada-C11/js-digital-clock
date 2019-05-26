@@ -1,3 +1,7 @@
+@font-face { font-family: DS-DIGI; src: url('DS-DIGI.ttf'); } 
+/* @font-face { font-family: Delicious; font-weight: regular; src: url('DS-DIGI.ttf');} */
+
+
 body {
     background-color: rgb(26, 25, 25);
 }
@@ -9,9 +13,9 @@ body {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     padding-top: 70px;
-    font-family: 'Quantico', sans-serif;
+    font-family: 'DS-DIGI', sans-serif;
     text-align: center;
     color: rgb(252, 252, 252);
-    font-size: 100px;
+    font-size: 200px;
     text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 5px #fc90c6, 0 0 10px #fc90c6, 0 0 15px #fc90c6;
     }
