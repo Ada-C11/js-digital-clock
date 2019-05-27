@@ -1,22 +1,21 @@
 // Your code heres
 // let date = new Date().toLocaleTimeString();
 
+const fetchLocalTime = () => {
+    let date = new Date;
 
-const fetchLocalTime = function fetchTime() {
-  let date = new Date;
-
-  const hour = date.getHours();
-  const minutes = date.getMinutes();
-  const seconds = date.getSeconds();
-
-  date = date.toDateString();
-  const time = `${hour}:${minutes}:${seconds}`;
-
-  $(".local-time").html(time);
-  $(".local-date").html(date);
+    const hour = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+  
+    date = date.toDateString();
+    const time = `${hour}:${minutes}:${seconds}`;
+  
+    $(".local-time").html(time);
+    $(".local-date").html(date);
 }
 
-const fetchAsiaTime = function fetchAsiaTime() {
+const fetchAsiaTime = () => {
     let asiaTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Tokyo"});
     asiaTime = new Date(asiaTime);
 
@@ -31,7 +30,7 @@ const fetchAsiaTime = function fetchAsiaTime() {
     $(".tokyo-date").html(date);
 }
 
-const fetchEuropeTime = function fetchEuropeTime() {
+const fetchEuropeTime = () => {
     let europeTime = new Date().toLocaleString("en-US", {timeZone: "Europe/London"});
     europeTime = new Date(europeTime);
 
@@ -46,7 +45,7 @@ const fetchEuropeTime = function fetchEuropeTime() {
     $(".london-date").html(date);
 }
 
-const fetchNewYorkTime = function fetchNewYorkTime() {
+const fetchNewYorkTime = () => {
     let newYorkTime = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
     newYorkTime = new Date(newYorkTime);
 
@@ -61,8 +60,7 @@ const fetchNewYorkTime = function fetchNewYorkTime() {
     $(".new-york-date").html(date);
 }
 
-
-const intervalID = setInterval(function () {
+const intervalID = setInterval(() => {
     fetchLocalTime();
     fetchAsiaTime();
     fetchEuropeTime();
