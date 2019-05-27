@@ -60,7 +60,16 @@ const fetchNewYorkTime = () => {
     $(".new-york-date").html(date);
 }
 
-const intervalID = setInterval(() => {
+// const helper = function helper(date) {
+//     const hour = date.getHours();
+//     const minutes = date.getMinutes();
+//     const seconds = date.getSeconds();
+
+//     const time = `${hour}:${minutes}:${seconds}`;
+//     return time;
+// }
+
+const interval = setInterval(() => {
     fetchLocalTime();
     fetchTokyoTime();
     fetchLondonTime();
