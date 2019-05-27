@@ -1,16 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+html,
 body {
-    background-color: #80d4ea;
+  width: 100%;
+  height: 100%;
 }
 
-#clock {
-    height: 100px;
-    width: 800px;
-    margin: auto;
-    position: absolute;
-    top: 0; left: 0; bottom: 0; right: 0;
-    padding-top: 70px;
-    font-family: courier, monospace;
-    text-align: center;
-    color: white;
-    font-size: 100px;
+body {
+  background-color: white;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-gap: 30px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: courier, monospace;
+  text-align: center;
+  color: white;
+  background-color: #e8dbc5;
+  font-size: 50px;
+  padding: 10px;
+}
+
+.seattle {
+  background-color: #b185a7;
+}
+
+.toronto {
+  background-color: #545f66;
+}
+.accra {
+  background-color: #37123c;
+}
+
+.tokyo {
+  background-color: #b1cc74;
 }
