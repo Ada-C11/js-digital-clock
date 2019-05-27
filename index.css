@@ -15,7 +15,7 @@ body {
 div {
     height: 100px;
     width: 1000px;
-    margin: 400px;
+    margin: 300px auto 600px auto;
     top: 0; left: 0; bottom: 0; right: 0;
     font-family: 'DS-DIGI', sans-serif;
     text-align: center;
