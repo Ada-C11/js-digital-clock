@@ -28,16 +28,6 @@ body {
     border-bottom: 1px solid white; 
 }
 
-/* .local-date, .tokyo-date, .london-date, .new-york-date {
-    text-align: center;
-    color: white;
-    font-family: courier, monospace; 
-    font-weight: bold;
-    font-size: 2em;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid white;
-} */
 
 .clock {
     height: 100px;

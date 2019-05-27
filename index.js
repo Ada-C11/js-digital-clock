@@ -2,8 +2,6 @@
 // let string = "hi";
 // let date = new Date().toLocaleTimeString();
 
-// $('.asia-time').append("HEllo");
-
 const fetchLocalTime = function fetchTime() {
   let date = new Date;
   let hour = date.getHours();
@@ -69,5 +67,4 @@ const intervalID = setInterval(function () {
     fetchAsiaTime();
     fetchEuropeTime();
     fetchNewYorkTime();
-    // functionB();
 }, 1000);
