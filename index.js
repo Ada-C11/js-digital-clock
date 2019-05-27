@@ -15,31 +15,31 @@ const fetchLocalTime = () => {
     $(".local-date").html(date);
 }
 
-const fetchAsiaTime = () => {
-    let asiaTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Tokyo"});
-    asiaTime = new Date(asiaTime);
+const fetchTokyoTime = () => {
+    let tokyoTime = new Date().toLocaleString("en-US", {timeZone: "Asia/Tokyo"});
+    tokyoTime = new Date(tokyoTime);
 
-    const hour = asiaTime.getHours();
-    const minutes = asiaTime.getMinutes();
-    const seconds = asiaTime.getSeconds();
+    const hour = tokyoTime.getHours();
+    const minutes = tokyoTime.getMinutes();
+    const seconds = tokyoTime.getSeconds();
 
     const time = `${hour}:${minutes}:${seconds}`;
-    const date = asiaTime.toDateString();
+    const date = tokyoTime.toDateString();
 
     $('.tokyo-time').html(time);
     $(".tokyo-date").html(date);
 }
 
-const fetchEuropeTime = () => {
-    let europeTime = new Date().toLocaleString("en-US", {timeZone: "Europe/London"});
-    europeTime = new Date(europeTime);
+const fetchLondonTime = () => {
+    let londonTime = new Date().toLocaleString("en-US", {timeZone: "Europe/London"});
+    londonTime = new Date(londonTime);
 
-    const hour = europeTime.getHours();
-    const minutes = europeTime.getMinutes();
-    const seconds = europeTime.getSeconds();
+    const hour = londonTime.getHours();
+    const minutes = londonTime.getMinutes();
+    const seconds = londonTime.getSeconds();
 
     const time = `${hour}:${minutes}:${seconds}`;
-    const date = europeTime.toDateString();
+    const date = londonTime.toDateString();
 
     $('.london-time').html(time);
     $(".london-date").html(date);
@@ -62,7 +62,7 @@ const fetchNewYorkTime = () => {
 
 const intervalID = setInterval(() => {
     fetchLocalTime();
-    fetchAsiaTime();
-    fetchEuropeTime();
+    fetchTokyoTime();
+    fetchLondonTime();
     fetchNewYorkTime();
 }, 1000);
