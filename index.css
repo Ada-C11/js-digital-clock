@@ -12,11 +12,10 @@ body {
     font-size: 50px;
 }
 
-#clock {
+div {
     height: 100px;
     width: 1000px;
-    margin: 100px;
-    position: absolute;
+    margin: 400px;
     top: 0; left: 0; bottom: 0; right: 0;
     font-family: 'DS-DIGI', sans-serif;
     text-align: center;
