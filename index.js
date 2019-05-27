@@ -1,5 +1,4 @@
 // Your code heres
-// let date = new Date().toLocaleTimeString();
 
 const fetchLocalTime = () => {
     let date = new Date;
@@ -59,15 +58,6 @@ const fetchNewYorkTime = () => {
     $('.new-york-time').html(time);
     $(".new-york-date").html(date);
 }
-
-// const helper = function helper(date) {
-//     const hour = date.getHours();
-//     const minutes = date.getMinutes();
-//     const seconds = date.getSeconds();
-
-//     const time = `${hour}:${minutes}:${seconds}`;
-//     return time;
-// }
 
 const interval = setInterval(() => {
     fetchLocalTime();
