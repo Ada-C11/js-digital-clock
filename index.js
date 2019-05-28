@@ -1,4 +1,4 @@
-$(document).ready(function() { 
+$(document).ready(() => { 
     const zero = number => {
         if (number.toString().length === 1) {
             number = "0" + number;

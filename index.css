@@ -1,11 +1,12 @@
 body {
     background-color: lightblue;
-    background-image: url("https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/61340380_10155964448707443_1868635520532217856_o.jpg?_nc_cat=102&_nc_eui2=AeGGcDEvjScsF0IArqD6eTJo-ZK19joH1QLW6a-9aYP7KJRskyoXyWZeW2hL1UH1JRVx3xCTLV5kMgObDeAnRCMvlv1WwS8QZa4J4KReQqhdQA&_nc_ht=scontent-sea1-1.xx&oh=57d46b52673d937b5960c8042dc70712&oe=5D573D4D");
+    background-image: url("https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/61340380_10155964448707443_1868635520532217856_o.jpg?_nc_cat=102&_nc_ht=scontent-sea1-1.xx&oh=30d94386706483a5d100672da4b611ac&oe=5D573D4D");
 }
 
 #clock {
     height: 100px;
     width: 800px;
+    justify-content: center;
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
@@ -13,5 +14,5 @@ body {
     font-family: 'Press Start 2P', cursive;;
     text-align: center;
     color: rgb(255, 255, 122);
-    font-size: 100px;
+    font-size: 80px;
 }
