@@ -1,14 +1,26 @@
 body {
   background-color: #80d4ea;
+  color: white;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+.black {
+  color: black;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
 }
 
 h1, #clock {
   height: 100px;
   width: 800px;
   margin: auto;
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-  color: white;
   font-size: 100px;
 }
 
@@ -16,4 +28,25 @@ h1, #clock {
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
   padding-top: 70px;
+}
+
+#color-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.red {
+  color: red;
+}
+
+.orange {
+  color: orange;
+}
+
+.courier {
+  font-family: Courier;
+}
+
+.arial {
+  font-family: Arial;
 }
