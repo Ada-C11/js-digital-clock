@@ -7,9 +7,8 @@ $(document).ready(function() {
     }
 
     const twelveHour = time => {
-        if (time > 12) {
-            time -= 12;
-        }
+        time = time % 12;
+        time = time ? time : 12;
         return time;
     }
 
