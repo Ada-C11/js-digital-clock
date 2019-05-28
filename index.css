@@ -38,3 +38,15 @@ body {
 #clock.center {
     text-align: center;
 }
+
+#clock.helvetica {
+    font-family: helvetica;
+}
+
+#clock.courier {
+    font-family: courier;
+}
+
+#clock.comic {
+    font-family: comic;
+}
