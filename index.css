@@ -1,16 +1,18 @@
 body {
-    background-color: #80d4ea;
+    background-color: lightblue;
+    background-image: url("https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/61340380_10155964448707443_1868635520532217856_o.jpg?_nc_cat=102&_nc_ht=scontent-sea1-1.xx&oh=30d94386706483a5d100672da4b611ac&oe=5D573D4D");
 }
 
 #clock {
     height: 100px;
     width: 800px;
+    justify-content: center;
     margin: auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     padding-top: 70px;
-    font-family: courier, monospace;
+    font-family: 'Press Start 2P', cursive;;
     text-align: center;
-    color: white;
-    font-size: 100px;
+    color: rgb(255, 255, 122);
+    font-size: 80px;
 }
