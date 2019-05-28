@@ -2,6 +2,20 @@ body {
     background-color: #80d4ea;
 }
 
+.btn-primary {
+    background: darkslateblue;
+    color: #ffffff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: Lavender;
+}
+
+.btn-primary:active, .btn-primary.active {
+    background: MediumPurple;
+    box-shadow: none;
+}
+
 #clock {
     height: 100px;
     width: 800px;
