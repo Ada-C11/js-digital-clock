@@ -1,5 +1,6 @@
 body {
     background-color: rgb(26, 25, 25);
+    padding: 20px;
 }
 
 .date {
@@ -25,5 +26,37 @@ div {
 }
 
 p {
-    margin: 20px;
+    margin: -50px;
+}
+
+.lavender {
+    color: rgb(242, 215, 253);
+}
+
+.rose {
+    color: rgb(250, 201, 229);
+}
+
+.ecru {
+    color: rgb(252, 252, 252);
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.courier {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.digital {
+    font-family: 'DS-DIGI', sans-serif;
+}
+
+button {
+    margin: 2px;
 }
