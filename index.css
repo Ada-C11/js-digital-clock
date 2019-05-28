@@ -1,7 +1,18 @@
 body {
     background-color: #80d4ea;
 }
+button {
+    background-color: darkcyan;
+    border-color: darkblue;
+    border-radius:10%;
+}
+button, label {
+    font-size:20px;
+}
 
+#color, #alignment, #font {
+    margin:5px 0;
+}
 #clock {
     height: 100px;
     width: 800px;
@@ -9,8 +20,41 @@ body {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     padding-top: 70px;
-    font-family: courier, monospace;
-    text-align: center;
-    color: white;
     font-size: 100px;
+}
+
+.white {
+    color:white;
+}
+
+.black {
+    color:black;
+}
+
+.yellow {
+    color:yellow;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align:left;
+}
+
+.right {
+    text-align:right;
+}
+
+.monospace {
+    font-family: courier, monospace;
+}
+
+.serif {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sans-serif {
+    font-family: Helvetica, Arial, sans-serif;
 }
