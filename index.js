@@ -1,13 +1,13 @@
 
 $(document).ready(function() {
     const time = () => {
-        const clock = document.getElementById('now');
+        const clock = document.getElementById('clock');
         let date = new Date();
         let hours = date.getHours();
         let minutes = date.getMinutes();
         let seconds = date.getSeconds();
         let now = `${hours}:${minutes}:${seconds}`;
-        $('#now').html(time);
+        $('#clock').html(now);
         console.log(now);
         return clock
     }
