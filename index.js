@@ -13,3 +13,14 @@ const findTime = () => {
 }
 
 setInterval(findTime, 1000);
+
+$('button').click( function () {
+    if ($(this).hasClass('color')) {
+        $('#clock').removeClass('purple pink red');
+        $('#clock').addClass(this.getAttribute("class"));
+    } else if ($(this).hasClass('alignment')) {
+        $('#clock').removeClass('left center right');
+        $('#clock').addClass(this.getAttribute("class"));
+    } 
+})
+
