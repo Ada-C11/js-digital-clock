@@ -6,13 +6,20 @@ $(document).ready(function() {
         return number;
     }
 
+    const twelveHour = time => {
+        if (time > 12) {
+            time -= 12;
+        }
+        return time;
+    }
+
     const clock = () => {
     let current = new Date();
     const hour = current.getHours();
     const minutes = current.getMinutes();
     const seconds = current.getSeconds();
 
-    return $('#clock').text(`${hour}:${zero(minutes)}:${zero(seconds)}`);
+    return $('#clock').text(`${twelveHour(hour)}:${zero(minutes)}:${zero(seconds)}`);
     }
     
     const interval = window.setInterval(clock, 500);
