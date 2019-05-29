@@ -6,15 +6,36 @@ function clock() {
   const time = `${hours}:${minutes}:${seconds}`;
 
   const dayIndex = now.getDay();
-  const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const dayNames = ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'];
   const dayOfMonth = now.getDate();
   const monthIndex = now.getMonth();
-  const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+  const monthNames = ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
   const year = now.getFullYear();
   const date = `${dayNames[dayIndex]} ${monthNames[monthIndex]} ${dayOfMonth} ${year}`;
 
   $("#date").text(`${date}`);
   $("#clock").text(`${time}`);
 }
-
 window.setInterval(clock, 500);
+
+function setColor(color){
+  ['clock', 'date'].forEach(function(element) {
+    document.getElementById(element).style.color = color;
+  })
+  // document.getElementById('color').style.color = color;
+}
+
+function setAllignment(textAlign){
+  ['clock', 'date'].forEach(function(element) {
+    document.getElementById(element).style.textAlign = textAlign;
+  })
+  // document.getElementById('clock').style.textAlign = textAlign;
+  // document.getElementById('clock').style.textAlign = textAlign;
+}
+
+//jquery way
+function setText(fontFamily){
+  ['#clock', '#date'].forEach(function(element){ 
+    $(element).css('font-family', fontFamily);
+  })
+}
