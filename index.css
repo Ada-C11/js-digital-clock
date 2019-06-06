@@ -14,3 +14,39 @@ body {
     color: white;
     font-size: 100px;
 }
+
+.red, #clock.red {
+    color: red;
+}
+
+.pink, #clock.pink {
+    color: hotpink;
+}
+
+.purple, #clock.purple {
+    color: purple;
+}
+
+#clock.right {
+    text-align: right;
+}
+
+#clock.left {
+    text-align: left;
+}
+
+#clock.center {
+    text-align: center;
+}
+
+#clock.helvetica {
+    font-family: helvetica;
+}
+
+#clock.courier {
+    font-family: courier;
+}
+
+#clock.comic {
+    font-family: comic;
+}
