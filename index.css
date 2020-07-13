@@ -1,5 +1,5 @@
 body {
-    background-color: #80d4ea;
+    background-image: url("https://i.ibb.co/V39tnkY/Screen-Shot-2019-05-28-at-9-23-51-AM.png")
 }
 
 #clock {
@@ -9,8 +9,8 @@ body {
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
     padding-top: 70px;
-    font-family: courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    color: white;
+    color: red;
     font-size: 100px;
 }
