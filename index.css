@@ -1,16 +1,62 @@
 body {
-    background-color: #80d4ea;
+    background-color: rgb(26, 25, 25);
+    padding: 20px;
 }
 
-#clock {
+.date {
+    font-family: 'Beon', sans-serif;
+    font-size: 50px;
+}
+
+.city {
+    font-family: 'Beon', sans-serif;
+    font-size: 50px;
+}
+
+div {
     height: 100px;
-    width: 800px;
-    margin: auto;
-    position: absolute;
+    width: 1000px;
+    margin: 300px auto 600px auto;
     top: 0; left: 0; bottom: 0; right: 0;
-    padding-top: 70px;
-    font-family: courier, monospace;
+    font-family: 'DS-DIGI', sans-serif;
     text-align: center;
-    color: white;
-    font-size: 100px;
+    color: rgb(252, 252, 252);
+    font-size: 200px;
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 5px #fc90c6, 0 0 10px #fc90c6, 0 0 15px #fc90c6;
+}
+
+p {
+    margin: -50px;
+}
+
+.lavender {
+    color: rgb(242, 215, 253);
+}
+
+.rose {
+    color: rgb(250, 201, 229);
+}
+
+.ecru {
+    color: rgb(252, 252, 252);
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.courier {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.digital {
+    font-family: 'DS-DIGI', sans-serif;
+}
+
+button {
+    margin: 2px;
 }
